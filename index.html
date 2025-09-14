@@ -46,47 +46,61 @@
         <div class="skill-list">
             <span>SQL</span>
 	    <span>Excel</span>	
-            <span>Power BI</span>
-            <span>Tableau</span>
-            <span>Python</span>
+            <span>Data Vizualization</span>
+            <span>Python(Loading...)</span>
         </div>
     </div>
 </section>
 
-       <section id="projects" class="projects">
+      <!-- Projects Section -->
+<section id="projects" class="projects">
     <div class="container">
         <h2>Portfolio Projects</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="SQL+Power BI">SQL+Power BI</button>
+            <button class="filter-btn" data-filter="Excel+Power BI">Excel+Power BI</button>
+        </div>
+
+        <!-- Updated Project Grid -->
         <div class="project-grid">
 
-            <a href="https://github.com/YadavPrakhar72/hospitality-data-analysis" target="_blank" class="project-card-link">
+            <!-- Project Card 1 (Excel+Power BI) -->
+            <a href="projects/hotel-analysis.html" class="project-card-link" data-category="Excel+Power BI">
                 <div class="project-card">
                     <h3>Hotel Bookings Data Analysis</h3>
                     <img src="hotel-analysis.jpg" alt="Hotel Bookings Data Analysis Screenshot">
                 </div>
             </a>
 
-            <a href="https://github.com/YadavPrakhar72/Cab-Bookings-Data-Analysis" target="_blank" class="project-card-link">
+            <!-- Project Card 2 (SQL+Power BI) -->
+            <a href="projects/cab-analysis.html" class="project-card-link" data-category="SQL+Power BI">
                 <div class="project-card">
                     <h3>Cab Bookings Data Analysis</h3>
                     <img src="cab-analysis.png" alt="Cab Bookings Data Analysis Screenshot">
                 </div>
             </a>
 
-            <a href="https://github.com/YadavPrakhar72/quick-delivery-orders-analysis" target="_blank" class="project-card-link">
+            <!-- Project Card 3 (SQL+Power BI) -->
+            <a href="projects/delivery-analysis.html" class="project-card-link" data-category="SQL+Power BI">
                 <div class="project-card">
                     <h3>Quick Delivery Orders Data Analysis</h3>
                     <img src="delivery-analysis.png" alt="Quick Delivery Orders Analysis Screenshot">
                 </div>
             </a>
 
-            <a href="https://github.com/YadavPrakhar72/HR-Analytics" target="_blank" class="project-card-link">
+            <!-- Project Card 4 (Excel+Power BI) -->
+            <a href="projects/hr-analysis.html" class="project-card-link" data-category="Excel+Power BI">
                 <div class="project-card">
                     <h3>HR - Attendance Data Analysis</h3>
                     <img src="hr-analysis.jpg" alt="HR - Attendance Data Analysis Screenshot">
                 </div>
             </a>
 
-            <a href="https://github.com/YadavPrakhar72/Sales-Insights" target="_blank" class="project-card-link">
+            <!-- Project Card 5 (Excel+Power BI) -->
+            <a href="projects/sales-insights.html" class="project-card-link" data-category="Excel+Power BI">
                 <div class="project-card">
                     <h3>Sales Insights</h3>
                     <img src="sales-insights.jpg" alt="Sales Insights Screenshot">
@@ -110,6 +124,28 @@
             </div>
         </div>
     </footer>
+ <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card-link');
 
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Set active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                // Show/hide projects
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

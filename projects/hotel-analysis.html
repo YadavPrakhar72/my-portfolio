@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title should be specific to the project -->
+    <title>Hotel Bookings Analysis | Prakhar Yadav</title>
+    <!-- We link to the CSS file using ../ to go up one directory -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Add some styles specific to this page -->
+    <style>
+        .project-header {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: var(--light-grey);
+        }
+        .project-content {
+            padding: 4rem 0;
+            max-width: 800px;
+            margin: auto;
+        }
+        .project-content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .project-meta {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .project-meta span {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.3rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- We are reusing the same header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Prakhar Yadav</div>
+                <!-- This link goes back to the homepage -->
+                <a href="../index.html" style="font-weight: 600; text-decoration: none; color: var(--primary-color);">Back to Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <!-- CUSTOMIZE: Project Title -->
+                <h1>Hotel Bookings Data Analysis</h1>
+                <p>An in-depth analysis of hospitality data to uncover booking trends and patterns.</p>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <a href="../index.html#projects" class="back-link">&larr; Back to All Projects</a>
+                
+                <!-- CUSTOMIZE: Larger project image -->
+                <img src="../hotel-analysis.jpg" alt="Hotel Bookings Project Screenshot">
+
+                <div class="project-meta">
+                    <!-- CUSTOMIZE: Tools Used -->
+                    <div>
+                        <strong>Tools Used:</strong> 
+                        <span>Power BI</span>
+                        <span>Excel</span>
+			<span>DAX</span>
+                    </div>
+                    <!-- CUSTOMIZE: GitHub Link -->
+                    <a href="https://github.com/YadavPrakhar72/hospitality-data-analysis" class="btn" target="_blank">View on GitHub</a>
+                </div>
+
+                <!-- CUSTOMIZE: Detailed Description -->
+                <h2>Project Overview</h2>
+                <p>
+		This Power BI dashboard provides a comprehensive performance analysis of a hotel chain across multiple cities and booking platforms. It was designed to give business stakeholders a clear view of key revenue and operational metrics — enabling better data-driven decision-making for occupancy, revenue management, and platform performance.
+                </p>
+                <h2>Key Findings & Insights</h2>
+                <ol><li>Mumbai properties are top contributors to revenue, with Atliq Exotica leading at 137M.</li>
+		    <li>Weekend stays have higher occupancy and revenue compared to weekdays.</li>
+		    <li>Booking platforms like Tripster and MakeYourTrip offer relatively high Realisation %, with minor differences in ADR.</li>
+		    <li>Cancellation rates are consistently around 25%, requiring focused retention strategies.</li>
+		    <li>Realisation % hovers around 70%, indicating consistent conversion from demand to revenue.</li>
+            </div>
+        </section>
+    </main>
+
+    <!-- We are reusing the same footer -->
+    <footer id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out for collaboration or just a friendly chat!</p>
+            <a href="mailto:prakharyadav7295@gmail.com" class="email-link">prakharyadav7295@gmail.com</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/prakharyadav7295/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/YadavPrakhar72" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

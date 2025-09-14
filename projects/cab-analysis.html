@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title should be specific to the project -->
+    <title>Cab Bookings Data Analysis | Prakhar Yadav</title>
+    <!-- We link to the CSS file using ../ to go up one directory -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Add some styles specific to this page -->
+    <style>
+        .project-header {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: var(--light-grey);
+        }
+        .project-content {
+            padding: 4rem 0;
+            max-width: 800px;
+            margin: auto;
+        }
+        .project-content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .project-meta {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .project-meta span {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.3rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- We are reusing the same header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Prakhar Yadav</div>
+                <!-- This link goes back to the homepage -->
+                <a href="../index.html" style="font-weight: 600; text-decoration: none; color: var(--primary-color);">Back to Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <!-- CUSTOMIZE: Project Title -->
+                <h1>Cab Bookings Data Analysis</h1>
+                <p></p>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <a href="../index.html#projects" class="back-link">&larr; Back to All Projects</a>
+                
+                <!-- CUSTOMIZE: Larger project image -->
+                <img src="../cab-analysis.png" alt="Hotel Bookings Project Screenshot">
+
+                <div class="project-meta">
+                    <!-- CUSTOMIZE: Tools Used -->
+                    <div>
+                        <strong>Tools Used:</strong> 
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                    </div>
+                    <!-- CUSTOMIZE: GitHub Link -->
+                    <a href="https://github.com/YadavPrakhar72/Cab-Bookings-Data-Analysis" class="btn" target="_blank">View on GitHub</a>
+                </div>
+
+                <!-- CUSTOMIZE: Detailed Description -->
+                <h2>Project Overview</h2>
+                <p>
+                    This interactive Power BI dashboard analyzes one month of cab bookings, providing a comprehensive view of booking volumes, revenue, cancellations, payment methods, ride distances, and customer behavior. Built to help ride-hailing platforms identify key operational trends, user preferences, and potential inefficiencies, this dashboard supports data-driven decisions across business, customer service, and operations teams.                </p>
+                <h2>Key Findings & Insights</h2>
+                <ol>
+			<li>Over 103K rides were booked, generating ₹35M in revenue for July 2024.</li>
+			<li>62% of rides were successful, while 38% were cancelled.</li>
+			<li>Driver-related cancellations (18.4K) were more than customer ones (10.5K).</li>
+			<li>Cash and UPI dominate payment methods, together accounting for over ₹33M in transactions.</li>
+			<li>Prime Sedan and eBikes contributed the highest ride distances, indicating strong demand for comfort and eco-friendly options.</li>
+			<li>Average ride distances hover around 15.5 km, except for Autos (6.2 km).</li>
+			<li>A few high-value customers alone contributed over ₹6K–₹8K each in revenue.</li>
+                                   
+</ol>
+            </div>
+        </section>
+    </main>
+
+    <!-- We are reusing the same footer -->
+    <footer id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out for collaboration or just a friendly chat!</p>
+            <a href="mailto:prakharyadav7295@gmail.com" class="email-link">prakharyadav7295@gmail.com</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/prakharyadav7295/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/YadavPrakhar72" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
