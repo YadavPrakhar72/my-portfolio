@@ -293,3 +293,13 @@ footer .email-link:hover {
     background-color: var(--primary-color);
     color: var(--white);
 }
+/* --- Override to disable ML project hover effect --- */
+
+/* Targets only the ML cards */
+.project-card-link[data-category="ml"] .project-card:hover img {
+    opacity: 0; /* Keeps the image hidden on hover */
+}
+
+.project-card-link[data-category="ml"] .project-card:hover h3 {
+    opacity: 1; /* Keeps the project title visible on hover */
+}
